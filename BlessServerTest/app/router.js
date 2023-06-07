@@ -17,4 +17,5 @@ module.exports = app => {
 
     router.get('/', auth,controller.home.index);
     router.post('/login', controller.home.login);
+    router.post('/buy/item',auth, controller.home.buyItem)
 };

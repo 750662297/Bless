@@ -27,6 +27,13 @@ export function queryList(params) {
     })
 }
 
+export function buyItem(params){
+    return request({
+        url:"/buy/item",
+        method:"post",
+        data:requestParam(params)
+    })
+}
 export function Test(params) {
     return request({
         url: "/",

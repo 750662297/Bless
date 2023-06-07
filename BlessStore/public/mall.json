@@ -8,7 +8,7 @@
             "new_price": 1000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801166.png",
             "color": 2,
             "info": [
                 {
@@ -32,7 +32,7 @@
             "new_price": 5000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_805860.png",
+            "icon_url": "../../public/images/item_icon/Icon_805860.png",
             "color": 2,
             "info": [
                 {
@@ -56,7 +56,7 @@
             "new_price": 10000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_805860.png",
+            "icon_url": "../../public/images/item_icon/Icon_805860.png",
             "color": 2,
             "info": [
                 {
@@ -80,7 +80,7 @@
             "new_price": 5000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_805860.png",
+            "icon_url": "../../public/images/item_icon/Icon_805860.png",
             "color": 2,
             "info": [
                 {
@@ -104,7 +104,7 @@
             "new_price": 10000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_805860.png",
+            "icon_url": "../../public/images/item_icon/Icon_805860.png",
             "color": 2,
             "info": [
                 {
@@ -128,7 +128,7 @@
             "new_price": 20000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_805860.png",
+            "icon_url": "../../public/images/item_icon/Icon_805860.png",
             "color": 2,
             "info": [
                 {
@@ -152,7 +152,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -181,7 +181,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -210,7 +210,7 @@
             "new_price": 2000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -240,7 +240,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_360013.png",
             "color": 2,
             "info": [
                 {
@@ -269,7 +269,7 @@
             "new_price": 1000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801166.png",
             "color": 2,
             "info": [
                 {
@@ -295,7 +295,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -321,7 +321,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -348,7 +348,7 @@
             "new_price": 100,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -376,7 +376,7 @@
             "new_price": 1000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -404,7 +404,7 @@
             "new_price": 10000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -432,7 +432,7 @@
             "new_price": 8800,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -480,7 +480,7 @@
             "new_price": 8800,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -528,7 +528,7 @@
             "new_price": 8800,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -576,7 +576,7 @@
             "new_price": 8800,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -624,7 +624,7 @@
             "new_price": 8800,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color": 2,
             "info": [
                 {
@@ -671,7 +671,7 @@
             "new_price": 90000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801169.png",
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
             "color":4,
             "info": [
                 {
@@ -725,7 +725,7 @@
             "new_price": 90000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801169.png",
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
             "color":4,
             "info": [
                 {
@@ -772,7 +772,7 @@
             "new_price": 90000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801169.png",
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
             "color":4,
             "info": [
                 {
@@ -819,7 +819,7 @@
             "new_price": 90000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801169.png",
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
             "color":4,
             "info": [
                 {
@@ -866,7 +866,7 @@
             "new_price": 90000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801169.png",
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
             "color":4,
             "info": [
                 {
@@ -913,7 +913,7 @@
             "new_price": 3000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801166.png",
+            "icon_url": "../../public/images/item_icon/Icon_801166.png",
             "color":4,
             "info": [
                 {
@@ -938,7 +938,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color":4,
             "info": [
                 {
@@ -963,7 +963,7 @@
             "new_price": 500,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color":4,
             "info": [
                 {
@@ -988,7 +988,7 @@
             "new_price": 50000,
             "money_type": 0,
             "unit": "点券",
-            "icon_url": "@/public/images/item_icon/Icon_801170.png",
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
             "color":4,
             "info": [
                 {

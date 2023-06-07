@@ -3,19 +3,19 @@
         <!-- 标题区域 -->
         <a-layout-header style="background-color: #545c64;">
 
-            <a-button style="margin-top: 16px;float: left;" @click="testClick">测试</a-button>
-            <div class="logo" style="float:left" >
-                
+            <div class="logo" style="float:left">
+
             </div>
             <div class="userArea" v-if="isLogin" style="float: right;margin-right: -50px;">
                 <a-button class="custom-button-login" type="text" style="color: #1890ff;"
-                    @click="handleClick">update</a-button>
+                    @click="handleClick">{{ uCash }}</a-button>
+                <a-button style="margin-top: 16px;margin-right: 10px;" @click="Logout">登出</a-button>
             </div>
             <div class="loginBtn" v-else style="float: right;margin-right: -50px;">
                 <a-button class="custom-button-login" type="text" style="color: #1890ff;"
                     @click="handleClick">login</a-button>
             </div>
-            
+
 
             <!-- 登录框 -->
             <a-modal v-model:visible="visible" title="登录" width="400px" ok-text="登录" cancel-text="取消" @ok="handleLogin"
@@ -67,7 +67,7 @@
                     <a-layout-content
                         :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
 
-                        
+
                         <HomeList />
 
                     </a-layout-content>
@@ -84,22 +84,24 @@
 <script lang="js" setup>
 import { MenuUnfoldOutlined, MenuFoldOutlined, ShopOutlined, QqOutlined, UserOutlined } from '@ant-design/icons-vue';
 import { message } from 'ant-design-vue'
-import { login, Test } from '../api/protocol'
-import { ref } from 'vue';
+import { login } from '../api/protocol'
+import { ref} from 'vue';
+import { store  ,storeClear} from "../store/index";
 
 import HomeList from './HomeList.vue'
 
 //变量定义区
 const selectedKeys = ref(['1']);
 const collapsed = ref(false);
-const isDisabled = ref(false);
+const isDisabled = ref(true);
 const visible = ref(false);
 const username = ref("");
 const password = ref("");
 const options = ref([]);
 const charVisible = ref(false);
 const charSelect = ref("");
-const isLogin = ref( localStorage.getItem('token') ? true : false)
+const isLogin = ref(store.token ? true : false)
+const uCash = ref(store.uCash)
 
 //文字显示变量定义 
 let storeText = ref("商城");
@@ -133,24 +135,34 @@ const handleLogin = () => {
 
     login(data).then(function (response) {
 
-        if (response.code != 200) {
-            if(response.code !=405)
-            {
+        if (response.code != 200 && response.code != 201) {
+            if (response.code != 405) {
                 charVisible.value = false;
             }
-            
+
             message.error(response.msg)
         }
         else {
             console.log(response.data)
 
-            if (charVisible.value != true) {
+            if (response.code == 200) {
                 //登录步骤1
                 charVisible.value = true;
                 options.value = response.data.charList;
-                window.localStorage.setItem("token", response.data.token)
             }
-            else {
+            else if (response.code == 201) {
+                window.localStorage.setItem("token", response.data.token)
+                window.localStorage.setItem("uCash", response.data.uCash);
+                window.localStorage.setItem("username", response.data.username);
+                window.localStorage.setItem("charId", response.data.charId);
+                
+                store.token = response.data.token;
+                store.uCash = response.data.uCash
+                store.username = response.data.username
+                store.charId = response.data.charId
+
+                visible.value = false;
+
                 message.success(response.msg)
             }
 
@@ -161,14 +173,9 @@ const handleLogin = () => {
     })
 }
 
-const testClick = () => {
-    let data;
-    Test(data).then(function (response) {
-        console.log("success")
-        console.log(response)
-    }).catch(function (error) {
-        console.log(error)
-    });
+const Logout = () => {
+    window.localStorage.clear();
+    storeClear();
 }
 </script>
 
