@@ -1,69 +1,32 @@
 <template>
-    <a-layout>
-        <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
-            <!-- <div class="logo" /> -->
-            <!-- <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline"> -->
-            <a-menu :selectedKeys="selectedKeys" theme="dark" mode="inline">
-                <a-menu-item key="1">
-                    <user-outlined />
-                    <span>nav 1</span>
-                </a-menu-item>
-                <a-menu-item key="2">
-                    <span>nav 2</span>
-                </a-menu-item>
-                <a-menu-item key="3">
-                    <span>nav 3</span>
-                </a-menu-item>
-            </a-menu>
-        </a-layout-sider>
+    <el-container>
+        <el-header>
+            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" background-color="#545c64"
+                text-color="#fff" active-text-color="#ffd04b" @select="handleSelect">
+                <el-menu-item index="1">
+                    商城
+                </el-menu-item>
+                <el-menu-item index="2" :disabled="isDisabled">
+                    <i class="el-icon-house"></i>
+                    GM工具
+                </el-menu-item>
+            </el-menu>
+        </el-header>
 
-
-        <a-layout>
-            <a-layout-header style="background: #fff; padding: 0;">
-                <menu-unfold-outlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
-                <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
-            </a-layout-header>
-            <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
-                Content
-            </a-layout-content>
-        </a-layout>
-    </a-layout>
+        <el-main>Main</el-main>
+        <el-footer>Footer</el-footer>
+    </el-container>
 </template>
-<script setup>
-import { UserOutlined, VideoCameraOutlined, UploadOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons-vue';
-import { ref } from 'vue';
+  
+<script lang="js" setup>
+import { ref } from 'vue'
+import HomeList from "./HomeList.vue";
+const activeIndex = ref('1')
+const isDisabled = ref(true)
 
-    let selectedKeys=ref(['1']);
-    const collapsed=ref(false);
 
-//   setup() {
-//     return {
-//       selectedKeys: ref(['1']),
-//       collapsed: ref(false),
-//     };
-//   },
-// });
+const handleSelect = (key, keyPath) => {
+    console.log(key, keyPath)
+}
 </script>
-<style>
-#components-layout-demo-custom-trigger .trigger {
-    font-size: 18px;
-    line-height: 64px;
-    padding: 0 24px;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-#components-layout-demo-custom-trigger .trigger:hover {
-    color: #1890ff;
-}
-
-#components-layout-demo-custom-trigger .logo {
-    height: 32px;
-    background: rgba(255, 255, 255, 0.3);
-    margin: 16px;
-}
-
-.site-layout .site-layout-background {
-    background: #fff;
-}
-</style>
+  

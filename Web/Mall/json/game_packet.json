@@ -1,0 +1,1376 @@
+[
+    {
+        "serial": 1,
+        "type": 0,
+        "use": 0,
+        "name": "60礼包[每日]",
+        "comment": [
+            "注意：comment节点是无效的，仅作为注释用。",
+            "说明：",
+            "use        ：设为0则不启用这个礼包",
+            "serial     ：礼包索引数字，本文件内索引不能重复",
+            "type       ：0=每日限购礼包，1=每周限购礼包，2=永久限购礼包（永久限购时，date_start和date_end有效，均为时间戳，时间戳转换：https://tool.lu/timestamp/），3=每日充值礼包，4=每周充值礼包，5=累计充值礼包（累计充值时，date_start和date_end有效，均为时间戳），6=直购礼包",
+            "name       ：礼包名称，前后端都会显示",
+            "old_price       ：显示原价",
+            "new_price       ：为购买礼包时，这是购买礼包的价格，单位是uCash；为充值礼包时，这是充值达到门槛的价格，单位是元",
+            "limit_type      ：限制类型，0=每日限制，1=每周限制，2=永久限制（永久时，date_start和date_end有效，均为时间戳）",
+            "limit_class     ：限制分类，0=单一角色，1=单一账号，2=全服；例如limit_type=0，limit_class=0，则表示每一个角色每天最多只能购买limit_max次，limit_type=1，limit_class=1，表示同一个账号在一周内最多只能购买limit_max次本礼包，limit_type=1，limit_class=2，则表示全服所有账号和角色加起来最多只能买limit_max个此礼包",
+            "limit_max       ：限制数量",
+            "currency        ：附赠的货币内容，支持的字段"
+        ],
+        "old_price": 999999,
+        "new_price": 999999,
+        "limit_type": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1676649599,
+        "item": {
+            "info": [
+                {
+                    "item_id": 10010001,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_4.png",
+                    "name": "训练用图腾",
+                    "color": 1,
+                    "content": [
+                        "礼包内容包含：<p style=\"color:red;\">训练用图腾</p>",
+                        "冲个<span style=\"color:red;\">心悦3</span>吧！"
+                    ]
+                },
+                {
+                    "item_id": 10009040,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IP_GVG_01_006.png",
+                    "name": "宝物猎人圣物",
+                    "content": [
+                        "礼包内容包含：<p style=\"color:red;\">训练用图腾</p>",
+                        "冲个<span style=\"color:red;\">心悦3</span>吧！"
+                    ]
+                }
+            ],
+            "currency": {
+                "Gold": 8888,
+                "Starseed":0,
+                "Relic_Fragments":0,
+                "Relic_Core":0,
+                "Crystal":0,
+                "Seal":0,
+                "Mint":0,
+                "Brand":0,
+                "BattleCoin":0,
+                "RevivalCoin":0,
+                "NormalKey":0,
+                "EliteKey":0,
+                "ValorsTalent":0,
+                "Exp":0,
+                "ReputationCid":0,
+                "ReputationValue":0
+            }
+        }
+    },
+    {
+        "serial": 3,
+        "type": 0,
+        "use": 1,
+        "name": "星种技能成长礼包",
+        "old_price": 1000,
+        "new_price": 600,
+        "limit_type": 0,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1676649599,
+        "item": {
+            "info": [
+                {
+                    "item_id": 80331001,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801053.png",
+                    "name": "星种技能成长礼包",
+                    "content": [
+                        "星种技能成长礼包*1"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 4,
+        "type": 0,
+        "use": 1,
+        "name": "利刺秘药",
+        "old_price": 800,
+        "new_price": 500,
+        "limit_type": 0,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1676649599,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70029036,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "利刺秘药",
+                    "content": [
+                        "利刺秘药*10"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 5,
+        "type": 0,
+        "use": 1,
+        "name": "攻击古代灵药",
+        "old_price": 2000,
+        "new_price": 1500,
+        "limit_type": 0,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1676649599,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70029036,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "攻击古代灵药",
+                    "content": [
+                        "攻击古代灵药*5"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 6,
+        "type": 0,
+        "use": 1,
+        "name": "破坏古代灵药",
+        "old_price": 2000,
+        "new_price": 1500,
+        "limit_type": 0,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1676649599,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70030005,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "破坏古代灵药",
+                    "content": [
+                        "破坏古代灵药*5"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 7,
+        "type": 1,
+        "use": 1,
+        "name": "1299点券普惠礼包",
+        "old_price": 22999,
+        "new_price": 1299,
+        "limit_type": 0,
+        "limit_max": 5,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1681383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 80331001,
+                    "num": 3,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_6.png",
+                    "name": "炼金石",
+                    "content": [
+                        "<p style=\"color:red;\">炼金石*3</p>"
+                    ]
+                },
+                {
+                    "item_id": 80411001,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_GoldBox_TAI.png",
+                    "name": "褪色药",
+                    "content": [
+                        "<p style=\"color:red;\">褪色药*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_17.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IP_10_015.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/icon_IP_GVG_01_005.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 8,
+        "type": 1,
+        "use": 1,
+        "name": "1699点券豪华礼包",
+        "old_price": 28999,
+        "new_price": 1699,
+        "limit_type": 0,
+        "limit_max": 5,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1681383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 80331001,
+                    "num": 3,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_6.png",
+                    "name": "炼金石",
+                    "content": [
+                        "<p style=\"color:red;\">炼金石*3</p>"
+                    ]
+                },
+                {
+                    "item_id": 80411001,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_GoldBox_TAI.png",
+                    "name": "褪色药",
+                    "content": [
+                        "<p style=\"color:red;\">褪色药*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_17.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IP_10_015.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/icon_IP_GVG_01_005.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 9,
+        "type": 1,
+        "use": 1,
+        "name": "1999点券究极礼包",
+        "old_price": 22999,
+        "new_price": 1999,
+        "limit_type": 0,
+        "limit_max": 5,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 80331001,
+                    "num": 3,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_6.png",
+                    "name": "炼金石",
+                    "content": [
+                        "<p style=\"color:red;\">炼金石*3</p>"
+                    ]
+                },
+                {
+                    "item_id": 80411001,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_GoldBox_TAI.png",
+                    "name": "褪色药",
+                    "content": [
+                        "<p style=\"color:red;\">褪色药*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_17.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IP_10_015.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/icon_IP_GVG_01_005.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 10,
+        "type": 2,
+        "use": 1,
+        "name": "星种兑换礼包-角色限购",
+        "old_price": 1000,
+        "new_price": 800,
+        "limit_type": 2,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70039005,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_360013.png",
+                    "name": "星种",
+                    "content": [
+                        "<p style=\"color:red;\">星种兑换礼包*1</p>",
+                        "<p style=\"color:red;\">本礼包每个角色限购1次</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 11,
+        "type": 3,
+        "use": 1,
+        "name": "每日累充5000点券礼包",
+        "old_price": 6000,
+        "new_price": 5000,
+        "limit_type": 0,
+        "limit_class": 1,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70029065,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "迅捷秘药（5）",
+                    "content": [
+                        "<p style=\"color:red;\">迅捷秘药*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 79900040,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "100%攻速药水（5）",
+                    "content": [
+                        "<p style=\"color:red;\">100%攻速药水*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 70029004,
+                    "num": 50,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "治疗药水I（50）",
+                    "content": [
+                        "<p style=\"color:red;\">治疗药水I*50</p>"
+                    ]
+                },
+                {
+                    "item_id": 76602001,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801169.png",
+                    "name": "复活之书箱子",
+                    "content": [
+                        "<p style=\"color:red;\">复活之书箱子*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 12,
+        "type": 3,
+        "use": 1,
+        "name": "每日累冲10000点券礼包",
+        "old_price": 12000,
+        "new_price": 10000,
+        "limit_type": 0,
+        "limit_class": 1,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 80005003,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801077.png",
+                    "name": "匠人维修工具",
+                    "content": [
+                        "<p style=\"color:red;\">匠人维修工具*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70030001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "攻击古代灵药",
+                    "content": [
+                        "<p style=\"color:red;\">攻击古代灵药*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 79900040,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "100%攻速药水（10）",
+                    "content": [
+                        "<p style=\"color:red;\">100%攻速药水*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 70029006,
+                    "num": 50,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "治疗药水II",
+                    "content": [
+                        "<p style=\"color:red;\">治疗药水II*50</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 13,
+        "type": 4,
+        "use": 1,
+        "name": "累充899点券礼包",
+        "old_price": 2999,
+        "new_price": 899,
+        "limit_type": 1,
+        "limit_max": 5,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 80331001,
+                    "num": 3,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_6.png",
+                    "name": "炼金石",
+                    "content": [
+                        "<p style=\"color:red;\">炼金石*3</p>"
+                    ]
+                },
+                {
+                    "item_id": 80411001,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_GoldBox_TAI.png",
+                    "name": "褪色药",
+                    "content": [
+                        "<p style=\"color:red;\">褪色药*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IE_01_004_17.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/icon_IP_10_015.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80006001,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/icon_IP_GVG_01_005.png",
+                    "name": "解绑咒文书",
+                    "content": [
+                        "<p style=\"color:red;\">解绑咒文书*5</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 15,
+        "type": 2,
+        "use": 1,
+        "name": "迎新星种礼包-角色限购1次",
+        "old_price": 2000,
+        "new_price": 1500,
+        "limit_type": 2,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70039028,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_360013.png",
+                    "name": "星种",
+                    "content": [
+                        "<p style=\"color:red;\">迎新星种礼包*1</p>",
+                        "<p style=\"color:red;\">本礼包每个角色限购1次</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 16,
+        "type": 2,
+        "use": 1,
+        "name": "时装坐骑礼包-角色限购1次",
+        "old_price": 3000,
+        "new_price": 2000,
+        "limit_type": 2,
+        "limit_class": 0,
+        "limit_max": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70039007,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801170.png",
+                    "name": "时装坐骑礼包",
+                    "content": [
+                        "圣歌占星师衣服时装添加卡*1",
+                        "圣歌占星师帽子时装添加卡*1",
+                        "灰熊添加卡*1"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 35,
+        "type": 5,
+        "use": 1,
+        "name": "累充1000点券礼包",
+        "old_price": 2000,
+        "new_price": 1000,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70079004,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802008.png",
+                    "name": "背包仓库增加券组合箱（10）",
+                    "content": [
+                        "<p style=\"color:red;\">背包仓库增加券组合箱*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 70029004,
+                    "num": 50,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "治疗药水I（50）",
+                    "content": [
+                        "<p style=\"color:red;\">治疗药水I*50</p>"
+                    ]
+                },
+                {
+                    "item_id": 70029065,
+                    "num": 15,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "迅捷秘药（15）",
+                    "content": [
+                        "<p style=\"color:red;\">迅捷秘药*15</p>"
+                    ]
+                },
+                {
+                    "item_id": 70062001,
+                    "num": 2,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_805625.png",
+                    "name": "角色栏扩充卷（2）",
+                    "content": [
+                        "<p style=\"color:red;\">角色栏扩充卷*2</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 36,
+        "type": 5,
+        "use": 1,
+        "name": "累充10000点券礼包",
+        "old_price": 20000,
+        "new_price": 10000,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70079004,
+                    "num": 30,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802008.png",
+                    "name": "背包仓库增加券组合箱（30）",
+                    "content": [
+                        "<p style=\"color:red;\">背包仓库增加券组合箱*30</p>"
+                    ]
+                },
+                {
+                    "item_id": 70050098,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802034.png",
+                    "name": "重武装犀牛添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">重武装犀牛添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70039005,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801053.png",
+                    "name": "星种兑换礼包（1）",
+                    "content": [
+                        "<p style=\"color:red;\">星种兑换礼包*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 53243,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802031.png",
+                    "name": "古代文献集（1）",
+                    "content": [
+                        "<p style=\"color:red;\">古代文献集*1</p>"
+                    ]
+                }
+            ],
+           "currency": {}
+        }
+    },
+    {
+        "serial": 37,
+        "type": 5,
+        "use": 1,
+        "name": "累充30000点券礼包",
+        "old_price": 40000,
+        "new_price": 30000,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70079004,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802008.png",
+                    "name": "背包仓库增加券组合箱（10）",
+                    "content": [
+                        "<p style=\"color:red;\">背包仓库增加券组合箱*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 70050122,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802034.png",
+                    "name": "白色剑齿虎添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">白色剑齿虎添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70030001,
+                    "num": 30,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "攻击古代灵药（30）",
+                    "content": [
+                        "<p style=\"color:red;\">迅捷秘药*30</p>"
+                    ]
+                },
+                {
+                    "item_id": 70029006,
+                    "num": 100,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801166.png",
+                    "name": "治疗药水III（100）",
+                    "content": [
+                        "<p style=\"color:red;\">治疗药水III*100</p>"
+                    ]
+                },
+                {
+                    "item_id": 80609002,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_805605.png",
+                    "name": "破旧的木匣子（1）",
+                    "content": [
+                        "<p style=\"color:red;\">破旧的木匣子*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 80609003,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_805605.png",
+                    "name": "破旧的钥匙（1）",
+                    "content": [
+                        "<p style=\"color:red;\">破旧的钥匙*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 38,
+        "type": 5,
+        "use": 1,
+        "name": "累充50000点券礼包",
+        "old_price": 60000,
+        "new_price": 50000,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70079004,
+                    "num": 10,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802008.png",
+                    "name": "背包仓库增加券组合箱（10）",
+                    "content": [
+                        "<p style=\"color:red;\">背包仓库增加券组合箱*10</p>"
+                    ]
+                },
+                {
+                    "item_id": 70050437,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802034.png",
+                    "name": "暗物独角兽添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">暗物独角兽添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70053045,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_805182.png",
+                    "name": "斑点人偶帽子时装添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">斑点人偶帽子时装添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70051045,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_805182.png",
+                    "name": "斑点人偶衣服时装添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">斑点人偶衣服时装添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 80244009,
+                    "num": 150,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_805860.png",
+                    "name": "帕埃蒂温的火种（神话）（150）",
+                    "content": [
+                        "<p style=\"color:red;\">帕埃蒂温的火种（神话）*150</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 39,
+        "type": 5,
+        "use": 1,
+        "name": "累充100000点券礼包",
+        "old_price": 120000,
+        "new_price": 100000,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+                {
+                    "item_id": 70050093,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_802034.png",
+                    "name": "白兔添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">白兔添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70055001,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_805182.png",
+                    "name": "蝙蝠翅膀时装添加卡（1）",
+                    "content": [
+                        "<p style=\"color:red;\">蝙蝠翅膀时装添加卡*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 80005003,
+                    "num": 5,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_801077.png",
+                    "name": "匠人维修工具（5）",
+                    "content": [
+                        "<p style=\"color:red;\">匠人维修工具*5</p>"
+                    ]
+                },
+                {
+                    "item_id": 80244009,
+                    "num": 300,
+                    "enchant": 0,
+                    "grade": 0,
+                    "icon_url": "images/item_icon/Icon_805860.png",
+                    "name": "帕埃蒂温的火种（神话）（300）",
+                    "content": [
+                        "<p style=\"color:red;\">帕埃蒂温的火种（神话）*300</p>"
+                    ]
+                },
+                {
+                    "item_id": 70053053,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_805182.png",
+                    "name": "捉迷藏兔子帽子时装（1）",
+                    "content": [
+                        "<p style=\"color:red;\">捉迷藏兔子帽子时装*1</p>"
+                    ]
+                },
+                {
+                    "item_id": 70051053,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_805182.png",
+                    "name": "捉迷藏兔子衣服时装（1）",
+                    "content": [
+                        "<p style=\"color:red;\">捉迷藏兔子衣服时装*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 50,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 +50扩容卷",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70057008,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "+50扩容卷 365天",
+                    "content": [
+                        "<p style=\"color:red;\">+50扩容卷 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 51,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 声望获得量增加",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70070051,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "声望获得量增加 365天",
+                    "content": [
+                        "<p style=\"color:red;\">声望获得量增加 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 52,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 采集额外获得券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064013,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "采集额外获得券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">采集额外获得券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 53,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 采矿额外获得券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064018,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "采矿额外获得券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">采矿额外获得券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 54,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 金币额外获得券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064019,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "金币额外获得券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">采矿额外获得券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 55,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 图腾柱使用优惠券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064020,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "图腾柱使用优惠券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">图腾柱使用优惠券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 56,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 生产加速券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064021,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "生产加速券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">生产加速券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 57,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 建设加速券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064022,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "建设加速券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">建设加速券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    },
+    {
+        "serial": 58,
+        "type": 2,
+        "use": 1,
+        "name": "免费领取 伐木额外获得券",
+        "old_price": 999,
+        "new_price": 0,
+        "limit_type": 2,
+        "limit_max": 1,
+        "limit_class": 1,
+        "unit": "点券",
+        "date_start": 1671283624,
+        "date_end": 1682383624,
+        "item": {
+            "info": [
+              
+                {
+                    "item_id": 70064149,
+                    "num": 1,
+                    "enchant": 0,
+                    "grade": 0,
+                    "color": 2,
+                    "icon_url": "images/item_icon/Icon_800954.png",
+                    "name": "伐木额外获得券 365天",
+                    "content": [
+                        "<p style=\"color:red;\">伐木额外获得券 365天*1</p>"
+                    ]
+                }
+            ],
+            "currency": {}
+        }
+    }
+    
+]

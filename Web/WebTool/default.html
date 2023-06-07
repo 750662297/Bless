@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神佑（BLESS）管理员工具</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{overflow: hidden;}
+    </style>
+    <script src="https://cdn.adeds.com/static/jquery/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="gm-nav">
+        神佑（BLESS）管理员工具
+    </div>
+    <iframe class="gm-middle" frameborder="0"></iframe>
+    <div class="gm-bottom-nav">
+        <div data-url="send_mail.html">发邮件</div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".gm-bottom-nav>div").eq(0).click();
+        }).on("click", ".gm-bottom-nav>div",function(){
+            if($(this).is(".gm-select")) return;
+            var url = $(this).attr('data-url');
+            if(url) $('iframe').attr('src',url);
+            $(".gm-bottom-nav>div").removeClass('gm-select');
+            $(this).addClass('gm-select');
+        });
+    </script>
+</body>
+</html>

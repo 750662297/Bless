@@ -1,0 +1,23 @@
+*{margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Microsoft YaHei'; box-sizing: border-box;}
+html{font-size: 1em; height: 100%;}
+body{max-width: 640px; overflow: hidden; margin: auto; position: relative; height: 100%; overflow: auto;}
+input,button,select{font-size: 1em; outline: none;}
+.gm-nav{height: 3em; background-color: #ff6600; text-align: center; color: #ffffff; font-size: 1.5em; line-height: 3em;}
+.gm-bottom-nav{height: 4em; background-color: #ffffff; color: #757575; position: absolute; bottom: 0; left: 0; width: 100%; display: flex; word-wrap: nowrap; border-top: 1px solid #d0d0d0; line-height: 4em; z-index: 9;}
+.gm-bottom-nav>div{height: 100%; vertical-align: top; cursor: pointer; width: calc(100% / 4); text-align: center;}
+.gm-bottom-nav>div:hover{color: #ff6600;}
+.gm-bottom-nav>div:active{color: #ff6600;}
+.gm-bottom-nav .gm-select{background-color: #ff6600; color: #ffffff;}
+.gm-middle{width: 100%; height: calc(100% - 8.5em); overflow: auto;}
+.gm-content{margin: 1em; padding: 1em; border-radius: 1em; box-shadow: 0 0 1em 0 rgba(0,0,0,.1);}
+.gm-input-inline{margin: .5em 0;}
+.gm-input-inline p{margin: .7em 0; color: #a0a0a0;}
+input[type=text],input[type=password],select{width: 100%; height: 2em; padding: 0 .8em; border-radius: .3em; border: 1px solid #d0d0d0; background-color: #ffffff;}
+input[type=text]:focus,input[type=password]:focus,select:focus{border: 1px solid #ff6600; box-shadow: 0 0 0 .2em #ffe1cd; color: #ff6600;}
+input[type=text]:disabled,input[type=password]:disabled,select:disabled{cursor: no-drop; background-color: #fafafa; color: #757575; border: 1px solid #e0e0e0;}
+input[type=button],input[type=submit],button{width: 100%; height: 2em; background-color: #ff6600; color: #ffffff; text-align: center; border: none; border-radius: .3em;}
+input[type=button]:active,input[type=submit]:active,button:active{background-color: #ce5200; color: #ffddc6;}
+input[type=button]:focus,input[type=submit]:focus,button:focus{box-shadow: 0 0 0 .2em #ffe1cd;}
+input[type=button]:disabled,input[type=submit]:disabled,button:disabled{background-color: #cecece; color: #b4b4b4; cursor: no-drop;}
+hr{margin: 1.5em 0; border: none; border-top: 1px solid #d0d0d0;}
+.gm-tips{background-color: #fff6f0; color: #ff6600; padding: 1em; border-left: 5px solid #ff6600; border-radius: .3em;}

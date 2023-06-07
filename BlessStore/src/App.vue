@@ -1,20 +1,13 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HomeContent from './components/HomeContent.vue';
-
-</script>
-
 <template>
 	<div class="app">
-        <!-- <a-layout>
-            <a-layout-header style="background: whitesmoke;height: 40px; padding: 0;padding-bottom: 10px;">
-                
-            </a-layout-header>
-        </a-layout> -->
-		<HomeContent />
+        <HomeContent />
 	</div>
 </template>
+
+<script setup>
+import HomeContent from "./components/HomeContent.vue";
+
+</script>
 
 <style>
 #app {

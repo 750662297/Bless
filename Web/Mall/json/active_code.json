@@ -1,0 +1,154 @@
+[
+    {
+        "code": "111",
+        "type": 1,
+        "use": 1,
+        "comment": [
+            "说明：",
+            "code：激活码",
+            "type：0表示激活码是一次性的（全服只能用一次）；1表示一个角色只能用一次（同账号下的其他角色仍然可以继续用，但不同的账号仍然可以继续使用）；2表示一个账号只能用一次（同账号下一个角色用了其他角色不能继续用，但不同的账号仍然可以继续使用）；3表示无限次使用（一个角色可以无限次的使用此激活码，同账号下可以不限制角色）；4表示无限次使用（同账号下只有一个角色能使用）",
+            "colling_times：冷却时间，单位：秒。即表示能重复使用的激活码时（type为3或4）使用激活码距离上一次使用的时间间隔。",
+            "date_start：激活码使用开始时间，0不限制开始时间。注意：是时间戳",
+            "date_end：激活码使用结束时间，0不限制结束时间。注意：是时间戳",
+            "cash：激活码带的uCash点数",
+            "item：物品信息",
+            "currency：游戏货币"
+        ],
+        "colling_times": 86400,
+        "date_start": 0,
+        "date_end": 0,
+        "cash": 0,
+        "item":[
+            {
+                "item_id": 80007001,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 80007002,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 80007003,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 80007007,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 80007004,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            }
+        ],
+        "currency":{
+            "Gold": 8888,
+            "Starseed":0,
+            "Relic_Fragments":0,
+            "Relic_Core":0,
+            "Crystal":0,
+            "Seal":0,
+            "Mint":0,
+            "Brand":0,
+            "BattleCoin":0,
+            "RevivalCoin":0,
+            "NormalKey":0,
+            "EliteKey":0,
+            "ValorsTalent":0,
+            "Exp":0,
+            "ReputationCid":0,
+            "ReputationValue":0
+        }
+    },
+ {
+        "code": "888888",
+        "type": 2,
+        "use": 1,
+        "comment": [
+            "说明：",
+            "code：激活码",
+            "type：0表示激活码是一次性的（全服只能用一次）；1表示一个角色只能用一次（同账号下的其他角色仍然可以继续用，但不同的账号仍然可以继续使用）；2表示一个账号只能用一次（同账号下一个角色用了其他角色不能继续用，但不同的账号仍然可以继续使用）；3表示无限次使用（一个角色可以无限次的使用此激活码，同账号下可以不限制角色）；4表示无限次使用（同账号下只有一个角色能使用）",
+            "colling_times：冷却时间，单位：秒。即表示能重复使用的激活码时（type为3或4）使用激活码距离上一次使用的时间间隔。",
+            "date_start：激活码使用开始时间，0不限制开始时间。注意：是时间戳",
+            "date_end：激活码使用结束时间，0不限制结束时间。注意：是时间戳",
+            "cash：激活码带的uCash点数",
+            "item：物品信息",
+            "currency：游戏货币"
+        ],
+        "colling_times": 86400,
+        "date_start": 1671390969,
+        "date_end": 1647630969,
+        "cash": 0,
+        "item":[
+                       {
+                "item_id": 70077004,
+                "num": 10,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 70062001,
+                "num": 2,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 70029005,
+                "num": 200,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 76602001,
+                "num": 4,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 80005003,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            },
+            {
+                "item_id": 70050444,
+                "num": 1,
+                "enchant": 0,
+                "grade": 0
+            } ,
+            {
+                "item_id": 70079004,
+                "num": 5,
+                "enchant": 0,
+                "grade": 0
+            } 
+            ],
+        "currency":{
+            "Gold": 0,
+            "Starseed":0,
+            "Relic_Fragments":0,
+            "Relic_Core":0,
+            "Crystal":0,
+            "Seal":0,
+            "Mint":0,
+            "Brand":0,
+            "BattleCoin":0,
+            "RevivalCoin":0,
+            "NormalKey":0,
+            "EliteKey":0,
+            "ValorsTalent":0,
+            "Exp":0,
+            "ReputationCid":0,
+            "ReputationValue":0
+        }
+    }
+]

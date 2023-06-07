@@ -1,0 +1,41 @@
+[
+    {
+        "id" : 1,
+        "name" : "神佑释放",
+        "regist" : true,
+        "login" : true,
+        "change" : false,
+        "sqlserver" : {
+            "host" : "127.0.0.1,1433",
+            "user" : "sa",
+            "pswd" : "BlessUnleashed",
+            "db_acc" : "GlobalDB_Create"
+        }
+    },
+    {
+        "id" : 2,
+        "name" : "神佑释放",
+        "regist" : true,
+        "login" : true,
+        "change" : false,
+        "sqlserver" : {
+            "host" : "127.0.0.1,1433",
+            "user" : "sa",
+            "pswd" : "BlessUnleashed",
+            "db_acc" : "GlobalDB_Create"
+        }
+    },
+    {
+        "id" : 3,
+        "name" : "神佑释放",
+        "regist" : true,
+        "login" : true,
+        "change" : false,
+        "sqlserver" : {
+            "host" : "127.0.0.1,1433",
+            "user" : "sa",
+            "pswd" : "BlessUnleashed",
+            "db_acc" : "GlobalDB_Create"
+        }
+    }
+]

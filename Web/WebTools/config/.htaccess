@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# 禁止URL访问本文件夹下的任何文件，无条件跳转提示找不到文件，此文件可以放在其他需要禁止展示访问的文件夹
+RewriteRule ^(.*)$ /404.html [NC,L]
