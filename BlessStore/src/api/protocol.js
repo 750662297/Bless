@@ -26,3 +26,11 @@ export function queryList(params) {
         data: requestParam(params)
     })
 }
+
+export function Test(params) {
+    return request({
+        url: "/",
+        method: "get",
+        data: requestParam(params)
+    })
+}

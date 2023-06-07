@@ -3,7 +3,9 @@
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
-    const { router, controller } = app;
+    const { router, controller ,middleware} = app;
+
+    const auth = middleware.auth();
 
     router.options('/api', ctx => {
         // 设置跨域响应头
@@ -13,6 +15,6 @@ module.exports = app => {
         ctx.body = '';
     });
 
-    router.get('/', controller.home.index);
+    router.get('/', auth,controller.home.index);
     router.post('/login', controller.home.login);
 };

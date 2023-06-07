@@ -3,11 +3,19 @@
         <!-- 标题区域 -->
         <a-layout-header style="background-color: #545c64;">
 
-            <div class="logo" style="float:left" />
-            <div class="loginBtn" style="float: right;margin-right: -50px;">
+            <a-button style="margin-top: 16px;float: left;" @click="testClick">测试</a-button>
+            <div class="logo" style="float:left" >
+                
+            </div>
+            <div class="userArea" v-if="isLogin" style="float: right;margin-right: -50px;">
+                <a-button class="custom-button-login" type="text" style="color: #1890ff;"
+                    @click="handleClick">update</a-button>
+            </div>
+            <div class="loginBtn" v-else style="float: right;margin-right: -50px;">
                 <a-button class="custom-button-login" type="text" style="color: #1890ff;"
                     @click="handleClick">login</a-button>
             </div>
+            
 
             <!-- 登录框 -->
             <a-modal v-model:visible="visible" title="登录" width="400px" ok-text="登录" cancel-text="取消" @ok="handleLogin"
@@ -59,6 +67,7 @@
                     <a-layout-content
                         :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
 
+                        
                         <HomeList />
 
                     </a-layout-content>
@@ -75,7 +84,7 @@
 <script lang="js" setup>
 import { MenuUnfoldOutlined, MenuFoldOutlined, ShopOutlined, QqOutlined, UserOutlined } from '@ant-design/icons-vue';
 import { message } from 'ant-design-vue'
-import { login } from '../api/protocol'
+import { login, Test } from '../api/protocol'
 import { ref } from 'vue';
 
 import HomeList from './HomeList.vue'
@@ -90,6 +99,7 @@ const password = ref("");
 const options = ref([]);
 const charVisible = ref(false);
 const charSelect = ref("");
+const isLogin = ref( localStorage.getItem('token') ? true : false)
 
 //文字显示变量定义 
 let storeText = ref("商城");
@@ -124,7 +134,11 @@ const handleLogin = () => {
     login(data).then(function (response) {
 
         if (response.code != 200) {
-            charVisible.value = false;
+            if(response.code !=405)
+            {
+                charVisible.value = false;
+            }
+            
             message.error(response.msg)
         }
         else {
@@ -134,6 +148,7 @@ const handleLogin = () => {
                 //登录步骤1
                 charVisible.value = true;
                 options.value = response.data.charList;
+                window.localStorage.setItem("token", response.data.token)
             }
             else {
                 message.success(response.msg)
@@ -146,6 +161,15 @@ const handleLogin = () => {
     })
 }
 
+const testClick = () => {
+    let data;
+    Test(data).then(function (response) {
+        console.log("success")
+        console.log(response)
+    }).catch(function (error) {
+        console.log(error)
+    });
+}
 </script>
 
 

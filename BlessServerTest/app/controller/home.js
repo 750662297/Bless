@@ -12,8 +12,9 @@ class HomeController extends Controller {
     }
 
     async login() {
-        const { ctx } = this;
+        const { ctx,app } = this;
         const userData = ctx.request.body;
+        console.log(userData)
 
         let body = {
             "code": 0,
@@ -44,17 +45,35 @@ class HomeController extends Controller {
         console.log(resultQueryChar)
         if(userData.char!="")
         {
-            console.log("login2")
-            resultQueryChar.recordset.forEach(obj => {
-                if(obj.DB_ID === userData.char)
+            let isSuccess=false;
+            isSuccess = resultQueryChar.recordset.forEach(obj => {
+                if(obj.DB_ID == userData.char)
                 {
                     console.log("login success")
                     // 登录成功，设置token等内容
+
+                    const token = app.jwt.sign({
+                        userName:userData.username,
+                    },app.config.jwt.secret,{
+                        expiresIn:60*60*24
+                    })
+
+                    let data ={
+                        token:token
+                    }
+
+                    body.code=200;
+                    body.msg="success";
+                    body.data=data;
+                    return true;
                 }
             });
             
-            body.code = 400;
-            body.msg = "此账号下无此角色，请重新选择"
+            if(isSuccess==false)
+            {
+                body.code = 405;
+                body.msg = "此账号下无此角色，请重新选择"
+            }
             ctx.body = body;
 
             return;

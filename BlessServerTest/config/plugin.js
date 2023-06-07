@@ -13,5 +13,9 @@ module.exports = {
   mssql:{
     enable:true,
     package:'egg-mssql'
+  },
+  jwt:{
+    enable:true,
+    package:'egg-jwt'
   }
 };

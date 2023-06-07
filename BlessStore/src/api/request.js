@@ -1,5 +1,6 @@
 import axios from 'axios'
 import {getBaseUrl} from "./constant"
+import { message } from 'ant-design-vue';
 
 const service = axios.create({
     baseURL: getBaseUrl(),
@@ -12,7 +13,11 @@ const service = axios.create({
 //请求拦截器
 service.interceptors.request.use(
     (config) =>{
-        config.headers["token"] = "";
+        if(localStorage.getItem('token'))
+        {
+            config.headers["token"] = localStorage.getItem('token');
+        }
+        
         return config;
     },
     (error) => {
@@ -46,8 +51,7 @@ service.interceptors.response.use(
         }
     },
     error => {
-        print("error exception")
-        
+        message.error(error.response.data.msg);
         return Promise.reject(error);
     }
 );

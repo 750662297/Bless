@@ -9,6 +9,7 @@
   "dependencies": {
     "egg": "^3",
     "egg-cors": "^2.2.3",
+    "egg-jwt": "^3.1.7",
     "egg-mssql": "^2.0.0",
     "egg-scripts": "^2",
     "mssql": "^9.1.1"
