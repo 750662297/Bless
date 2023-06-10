@@ -45,15 +45,21 @@ class DBService extends Service {
     }
 
     async BuyItem(charId, str){
-        const result = await this.DBgamedbPC.query(`EXEC create_gamedb_pc.dbo.BLSP_Native_CreateMail ${charId},0,0,'系统',253,1,'WEB商城','[]',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0${str},'2079-01-01 00:00:00','2079-01-01 00:00:00',NULL`);
+        const result = await this.DBgamedbPC.query(`EXEC create_gamedb_pc.dbo.BLSP_Native_CreateMail '${charId}',0,0,'系统',253,1,'WEB商城','[]',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'${str}','2079-01-01 00:00:00','2079-01-01 00:00:00',NULL`);
         return result;
     }
 
-    async InsertBuyHistory(username,charId,index,price,cash){
+    async InsertBuyHistory(username,charId,price,cash){
 
-        const result = await this.DBgamedbPC.query(`INSERT INTO create_gamedb_pc.WebMall.TBL_MallBuyHistory (FLD_USER_NAME, FLD_CHAR_ID, FLD_INDEX, FLD_IP, FLD_PRICE, FLD_BALANCE) VALUES (${username}, ${charId}, ${index}, '192.168.200.93', ${price}, ${cash})`);
-        console.log("InsertBuyHistory    end")
-        console.log("InsertBuyHistory   result:",result)
+        let result;
+        try
+        {
+            result = await this.DBgamedbPC.query(`INSERT INTO create_gamedb_pc.WebMall.TBL_MallBuyHistory (FLD_USER_NAME, FLD_CHAR_ID, FLD_PRICE, FLD_BALANCE) VALUES ('${username}', '${charId}', '${price}', '${cash}')`);
+        }catch(err)
+        {
+            console.log(err)
+        }
+        
         return result;
     }
 }

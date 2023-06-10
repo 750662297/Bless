@@ -21,6 +21,13 @@ module.exports = appInfo => {
   config.jwt = {
 	secret:'xczl785'
   }
+
+  config.static = {
+    prefix:'/',
+    dir: process.cwd() + '/public'
+  }
+
+  config.rundir = process.cwd() + '/run'
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
@@ -54,12 +61,20 @@ module.exports = appInfo => {
 	},
   };
 
+  const cluster = {
+    listen: {
+        port: 8888,
+        hostname: '127.0.0.1',
+      },
+  }
+
   return {
     ...config,
     ...userConfig,
     security,
     cors,
-	mssql
+	mssql,
+    cluster
   };
 };
 

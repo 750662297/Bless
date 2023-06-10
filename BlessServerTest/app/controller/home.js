@@ -103,6 +103,7 @@ class HomeController extends Controller {
             }
         }
 
+        console.log("buy item")
         let cash = await ctx.service.service.getUserMoney(item.username);
         //资金不足
         if (cash < item.price) {
@@ -147,23 +148,44 @@ class HomeController extends Controller {
             await ctx.service.service.BuyItem(item.charId,str);
         });
 
-        let aResult = await ctx.service.service.InsertBuyHistory(item.username,item.charId,item.index,item.price,cash-item.price);
+
+        console.log("buy before InsertBuyHistory")
+        let aResult = await ctx.service.service.InsertBuyHistory(item.username,item.charId,item.price,cash-item.price);
+        console.log(aResult)
         if(aResult.rowsAffected !=0)
         {
             let data={
                 cash:cash-item.price
             }
-
             body.code=200;
             body.msg="success";
             body.data=data;
         }
         else{
-            body.code=400;
+            body.code=200;
             body.msg="插入购买记录失败"
         }
         
+        
         ctx.body=body;
+    }
+
+    async postAction()
+    {
+
+        const { ctx, app } = this;
+        const item = ctx.request.body;
+
+        const username = item.username;
+        const password = item.password;
+        const ip = item.ip;
+        const mac = item.mac;
+        const server = item.server;
+        const step = item.step;
+
+
+        console.log(item)
+        this.ctx.body="hi,post"
     }
 }
 

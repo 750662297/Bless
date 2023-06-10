@@ -36,22 +36,28 @@
 </template>
 <script setup>
 import {EllipsisOutlined,ShoppingCartOutlined, PlusOutlined} from '@ant-design/icons-vue';
+import { message } from 'ant-design-vue';
 import { ref} from 'vue';
+import { userInfoStore } from "../store/store";
+
 import jsonData from '../../public/mall.json'
 import { buyItem } from '../api/protocol';
-import { message } from 'ant-design-vue';
-import { store} from "../store/index";
 
+
+const userInfo = userInfoStore();
+
+//绑定vuex及ref区
 const data = ref([]);
 data.value = jsonData;
+const isShowList = ref(userInfo.token ? true : false); //骨架屏和list的切换
+
 
 const shopAction =(item)=>{
     console.log(item)
 
     let data ={
-        username:store.username,
-        charId:store.charId,
-        index:item.serial,
+        username:userInfo.username,
+        charId:userInfo.charId,
         info:item.item.info,
         price:item.item.new_price
     }
@@ -63,7 +69,7 @@ const shopAction =(item)=>{
         }
         else{
             window.localStorage.setItem("uCash",response.data.cash)
-            store.uCash = response.data.cash
+            userInfo.updateUCash(response.data.cash)
             message.success(response.msg)
         }
     }).catch(function (error){

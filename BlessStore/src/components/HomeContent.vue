@@ -1,20 +1,64 @@
 <template>
-    <a-layout>
-        <!-- 标题区域 -->
-        <a-layout-header style="background-color: #545c64;">
+    <div>
+        <a-layout>
+            <!-- 标题区域 -->
+            <a-layout-header style="background-color: #545c64;">
 
-            <div class="logo" style="float:left">
+                <div class="logo" style="float:left"/>
+                
+                <div class="userInfoArea" style="float: right;">
+                    <div v-if="userInfo.token ? true : false" style="margin-right: -50px;">
+                        <span style="color:darkorange;">{{ userInfo.username }}</span>
+                        <a-button class="custom-button-login" type="text" style="color: #1890ff;">{{ userInfo.uCash
+                        }}</a-button>
+                        <a-button style="margin-top: 16px;margin-right: 10px;" @click="Logout">登出</a-button>
+                    </div>
+                    <div class="loginBtn" v-else style="margin-right: -50px;">
+                        <a-button class="custom-button-login" type="text" style="color: #1890ff;"
+                            @click="handleClick">login</a-button>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+            </a-layout-header>
 
-            </div>
-            <div class="userArea" v-if="isLogin" style="float: right;margin-right: -50px;">
-                <a-button class="custom-button-login" type="text" style="color: #1890ff;"
-                    @click="handleClick">{{ uCash }}</a-button>
-                <a-button style="margin-top: 16px;margin-right: 10px;" @click="Logout">登出</a-button>
-            </div>
-            <div class="loginBtn" v-else style="float: right;margin-right: -50px;">
-                <a-button class="custom-button-login" type="text" style="color: #1890ff;"
-                    @click="handleClick">login</a-button>
-            </div>
+            <!-- 下半Content区域 -->
+            <a-layout-content style="margin-top: 20px;">
+                <a-layout>
+                    <a-layout-sider v-model:collapsed="userInfo.collapsed" :trigger="null" collapsible>
+
+                        <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
+                            <a-menu-item key="1">
+                                <shop-outlined />
+                                <span>{{ storeText }}</span>
+                            </a-menu-item>
+                            <a-menu-item key="2" :disabled="isDisabled">
+                                <qq-outlined />
+                                <span>{{ GMTool }}</span>
+                            </a-menu-item>
+                        </a-menu>
+                    </a-layout-sider>
+
+                    <!-- Content区域 -->
+                    <a-layout>
+                        <a-layout-header style="background: #fff; padding: 0">
+                            <menu-unfold-outlined v-if="userInfo.collapsed" class="trigger" @click="changeCollapsed()" />
+                            <menu-fold-outlined v-else class="trigger" @click="(changeCollapsed())" />
+                        </a-layout-header>
+                        <a-layout-content
+                            :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
+
+
+                            <HomeList />
+
+                        </a-layout-content>
+                    </a-layout>
+                </a-layout>
+
+            </a-layout-content>
+
+            <a-layout-footer style="margin-bottom: 20px;text-align: center">
+                {{ footerText }}
+            </a-layout-footer>
 
 
             <!-- 登录框 -->
@@ -35,64 +79,25 @@
                             {{ option.Player_Name }}
                         </a-select-option>
                     </a-select>
-
-
                 </div>
             </a-modal>
-        </a-layout-header>
-
-        <!-- 下半Content区域 -->
-        <a-layout-content style="margin-top: 20px;">
-            <a-layout>
-                <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
-
-                    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-                        <a-menu-item key="1">
-                            <shop-outlined />
-                            <span>{{ storeText }}</span>
-                        </a-menu-item>
-                        <a-menu-item key="2" :disabled="isDisabled">
-                            <qq-outlined />
-                            <span>{{ GMTool }}</span>
-                        </a-menu-item>
-                    </a-menu>
-                </a-layout-sider>
-
-                <!-- Content区域 -->
-                <a-layout>
-                    <a-layout-header style="background: #fff; padding: 0">
-                        <menu-unfold-outlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
-                        <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
-                    </a-layout-header>
-                    <a-layout-content
-                        :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
-
-
-                        <HomeList />
-
-                    </a-layout-content>
-                </a-layout>
-            </a-layout>
-
-        </a-layout-content>
-
-        <a-layout-footer style="margin-bottom: 20px;text-align: center">
-            {{ footerText }}
-        </a-layout-footer>
-    </a-layout>
+        </a-layout>
+    </div>
 </template>
 <script lang="js" setup>
 import { MenuUnfoldOutlined, MenuFoldOutlined, ShopOutlined, QqOutlined, UserOutlined } from '@ant-design/icons-vue';
 import { message } from 'ant-design-vue'
-import { login } from '../api/protocol'
-import { ref} from 'vue';
-import { store  ,storeClear} from "../store/index";
+import { ref } from 'vue';
+import { userInfoStore } from "../store/store";
 
 import HomeList from './HomeList.vue'
+import { login } from '../api/protocol'
+
+//vue变量
+const userInfo = userInfoStore();
 
 //变量定义区
 const selectedKeys = ref(['1']);
-const collapsed = ref(false);
 const isDisabled = ref(true);
 const visible = ref(false);
 const username = ref("");
@@ -100,8 +105,6 @@ const password = ref("");
 const options = ref([]);
 const charVisible = ref(false);
 const charSelect = ref("");
-const isLogin = ref(store.token ? true : false)
-const uCash = ref(store.uCash)
 
 //文字显示变量定义 
 let storeText = ref("商城");
@@ -110,6 +113,10 @@ let footerText = ref("开发版本，仅作测试用");
 
 const handleChange = (value) => {
 
+}
+
+const changeCollapsed = () => {
+    userInfo.updateCollapsed();
 }
 //函数区域
 const handleClick = () => {
@@ -155,11 +162,11 @@ const handleLogin = () => {
                 window.localStorage.setItem("uCash", response.data.uCash);
                 window.localStorage.setItem("username", response.data.username);
                 window.localStorage.setItem("charId", response.data.charId);
-                
-                store.token = response.data.token;
-                store.uCash = response.data.uCash
-                store.username = response.data.username
-                store.charId = response.data.charId
+
+                userInfo.updateToken(response.data.token);
+                userInfo.updateUCash(response.data.uCash);
+                userInfo.updateUserName(response.data.username);
+                userInfo.updateCharId(response.data.charId);
 
                 visible.value = false;
 
@@ -175,7 +182,7 @@ const handleLogin = () => {
 
 const Logout = () => {
     window.localStorage.clear();
-    storeClear();
+    userInfo.clearAll();
 }
 </script>
 
