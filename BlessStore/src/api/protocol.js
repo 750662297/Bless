@@ -21,8 +21,8 @@ export function logout(params) {
 
 export function queryList(params) {
     return request({
-        url: "/query/list",
-        method: "get",
+        url: "/queryList",
+        method: "post",
         data: requestParam(params)
     })
 }
@@ -34,6 +34,7 @@ export function buyItem(params){
         data:requestParam(params)
     })
 }
+
 export function Test(params) {
     return request({
         url: "/",

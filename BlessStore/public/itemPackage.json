@@ -1,0 +1,455 @@
+[
+    {
+        "desc":"",
+        "item": {
+            "name": "武器强化礼包(A)",
+            "price": 500,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 70039010,
+                    "num": 1
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "武器强化石*4",
+                "修理工具*1",
+                "圣物遗骸*1000",
+                "星种*40000"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "防具强化礼包(A)",
+            "price": 500,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 70039011,
+                    "num": 1
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "防具强化石*6",
+                "修理工具*1",
+                "圣物遗骸*1000",
+                "星种*40000"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "角色变更礼包",
+            "price": 2000,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 70039012,
+                    "num": 1
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "角色改名卷*1",
+                "角色外形美容卷*1",
+                "职业点数重置卷*1",
+                "金色染色剂*5",
+                "星种*180000"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "星种礼包",
+            "price": 500,
+            "icon_url": "../../public/images/item_icon/Icon_360013.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 70039004,
+                    "num": 1
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "未知*1",
+                "未知*1",
+                "未知*1",
+                "星种*100000"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "hot" : true,
+        "item": {
+            "name": "守护者白色灵韵礼包",
+            "price": 8800,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 80941001,
+                    "num": 70
+                },
+                {
+                    "item_id": 80941011,
+                    "num": 70
+                },
+                {
+                    "item_id": 80941021,
+                    "num": 70
+                },
+                {
+                    "item_id": 80941031,
+                    "num": 70
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "勇者灵韵：守护者（70个）",
+                "野性灵韵：守护者（70个）",
+                "狮心灵韵：守护者（70个）",
+                "新月灵韵：守护者（70个）"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "hot" : true,
+        "item": {
+            "name": "狂战士白色灵韵礼包",
+            "price": 8800,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 80942001,
+                    "num": 70
+                },
+                {
+                    "item_id": 80942011,
+                    "num": 70
+                },
+                {
+                    "item_id": 80942021,
+                    "num": 70
+                },
+                {
+                    "item_id": 80942021,
+                    "num": 70
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "勇者灵韵：狂战士（70个）",
+                "野性灵韵：狂战士（70个）",
+                "狮心灵韵：狂战士（70个）",
+                "新月灵韵：狂战士（70个）"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "hot" : true,
+        "item": {
+            "name": "游侠白色灵韵礼包",
+            "price": 8800,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 80943001,
+                    "num": 70
+                },
+                {
+                    "item_id": 80943011,
+                    "num": 70
+                },
+                {
+                    "item_id": 80943021,
+                    "num": 70
+                },
+                {
+                    "item_id": 80943031,
+                    "num": 70
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "勇者灵韵：游侠（70个）",
+                "野性灵韵：游侠（70个）",
+                "狮心灵韵：游侠（70个）",
+                "新月灵韵：游侠（70个）"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "hot" : true,
+        "item": {
+            "name": "牧师白色灵韵礼包",
+            "price": 8800,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 80944001,
+                    "num": 70
+                },
+                {
+                    "item_id": 80944011,
+                    "num": 70
+                },
+                {
+                    "item_id": 80944021,
+                    "num": 70
+                },
+                {
+                    "item_id": 80944031,
+                    "num": 70
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "勇者灵韵：牧师（70个）",
+                "野性灵韵：牧师（70个）",
+                "狮心灵韵：牧师（70个）",
+                "新月灵韵：牧师（70个）"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "hot" : true,
+        "item": {
+            "name": "魔法师白色灵韵礼包",
+            "price": 8800,
+            "icon_url": "../../public/images/item_icon/Icon_801170.png",
+            "color": 2,
+            "info": [
+                {
+                    "item_id": 80945001,
+                    "num": 70
+                },
+                {
+                    "item_id": 80945011,
+                    "num": 70
+                },
+                {
+                    "item_id": 80945021,
+                    "num": 70
+                },
+                {
+                    "item_id": 80945031,
+                    "num": 70
+                }
+            ],
+            "tag":"",
+            "content": [ 
+                "勇者灵韵：魔法师（70个）",
+                "野性灵韵：魔法师（70个）",
+                "狮心灵韵：魔法师（70个）",
+                "新月灵韵：魔法师（70个）"
+                ],
+            "currency": {}
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "守护技能攻速时装套",
+            "price": 90000,
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
+            "color":4,
+            "info": [
+                {
+                    "item_id": 40031010,
+                    "num": 1
+                },
+                {
+                    "item_id": 40032010,
+                    "num": 1
+                },
+                {
+                    "item_id": 70131053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70133053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70064121,
+                    "num": 1
+                }
+                
+            ],
+            "tag":"",
+            "content": [
+                "冬雪节单手剑时装添加卡[全技能+2]",
+                "冬雪节之盾时装添加卡[无特效]",
+                "冬雪节衣服时装添加卡[全技能+3]",
+                "冬雪节帽子时装添加卡[全技能+2]",
+                "100%攻速buff卷轴 365天"
+            ]
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "狂战技能攻速时装套",
+            "price": 90000,
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
+            "color":4,
+            "info": [
+                {
+                    "item_id": 40033010,
+                    "num": 1
+                },
+                {
+                    "item_id": 70131053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70133053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70064121,
+                    "num": 1
+                }
+                
+            ],
+            "tag":"",
+            "content": [
+                "冬雪节之斧时装添加卡[全技能+2]",
+                "冬雪节衣服时装添加卡[全技能+3]",
+                "冬雪节帽子时装添加卡[全技能+2]",
+                "100%攻速buff卷轴 365天"
+            ]
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "游侠技能攻速时装套",
+            "price": 90000,
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
+            "color":4,
+            "info": [
+                {
+                    "item_id": 40034010,
+                    "num": 1
+                },
+                {
+                    "item_id": 70131053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70133053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70064121,
+                    "num": 1
+                }
+                
+            ],
+            "tag":"",
+            "content": [
+                "冬雪节之弓时装添加卡[全技能+2]",
+                "冬雪节衣服时装添加卡[全技能+3]",
+                "冬雪节帽子时装添加卡[全技能+2]",
+                "100%攻速buff卷轴 365天"
+            ]
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "魔法师技能攻速时装套",
+            "price": 90000,
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
+            "color":4,
+            "info": [
+                {
+                    "item_id": 40035010,
+                    "num": 1
+                },
+                {
+                    "item_id": 70131053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70133053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70064121,
+                    "num": 1
+                }
+                
+            ],
+            "tag":"",
+            "content": [
+                "冬雪节手杖时装添加卡[全技能+2]",
+                "冬雪节衣服时装添加卡[全技能+3]",
+                "冬雪节帽子时装添加卡[全技能+2]",
+                "100%攻速buff卷轴 365天"
+            ]
+        }
+    },
+    {
+        "desc":"",
+        "item": {
+            "name": "牧师技能攻速时装套",
+            "price": 90000,
+            "icon_url": "../../public/images/item_icon/Icon_801169.png",
+            "color":4,
+            "info": [
+                {
+                    "item_id": 40035010,
+                    "num": 1
+                },
+                {
+                    "item_id": 70131053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70133053,
+                    "num": 1
+                },
+                {
+                    "item_id": 70064121,
+                    "num": 1
+                }
+                
+            ],
+            "tag":"",
+            "content": [
+                "冬雪节手杖时装添加卡[全技能+2]",
+                "冬雪节衣服时装添加卡[全技能+3]",
+                "冬雪节帽子时装添加卡[全技能+2]",
+                "100%攻速buff卷轴 365天"
+            ]
+        }
+    }
+]

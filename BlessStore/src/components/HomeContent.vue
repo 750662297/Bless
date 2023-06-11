@@ -4,8 +4,8 @@
             <!-- 标题区域 -->
             <a-layout-header style="background-color: #545c64;">
 
-                <div class="logo" style="float:left"/>
-                
+                <div class="logo" style="float:left" />
+
                 <div class="userInfoArea" style="float: right;">
                     <div v-if="userInfo.token ? true : false" style="margin-right: -50px;">
                         <span style="color:darkorange;">{{ userInfo.username }}</span>
@@ -43,6 +43,11 @@
                         <a-layout-header style="background: #fff; padding: 0">
                             <menu-unfold-outlined v-if="userInfo.collapsed" class="trigger" @click="changeCollapsed()" />
                             <menu-fold-outlined v-else class="trigger" @click="(changeCollapsed())" />
+
+                            <div class="searchArea" style="float: right;margin-top: 20px;margin-right: 20px;">
+                                <a-input-search v-model:value="searchName" placeholder="搜索" style="width: 200px"
+                                    @search="onSearch(searchName)" />
+                            </div>
                         </a-layout-header>
                         <a-layout-content
                             :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
@@ -105,14 +110,17 @@ const password = ref("");
 const options = ref([]);
 const charVisible = ref(false);
 const charSelect = ref("");
-
+const searchName =ref("")
 //文字显示变量定义 
 let storeText = ref("商城");
 let GMTool = ref("GM工具");
 let footerText = ref("开发版本，仅作测试用");
 
+const onSearch = (value)=>{
+    userInfo.updateSearchName(value)
+}
 const handleChange = (value) => {
-
+    
 }
 
 const changeCollapsed = () => {

@@ -7,7 +7,8 @@ export const userInfoStore = defineStore('userInfo',{
             token:window.localStorage.getItem('token'),
             charId:window.localStorage.getItem('charId'),
             uCash:window.localStorage.getItem('uCash'),
-            collapsed:true
+            collapsed:true,
+            searchName:null,
         }
     },
 
@@ -27,14 +28,18 @@ export const userInfoStore = defineStore('userInfo',{
         updateCollapsed(){
             this.collapsed=!this.collapsed;
         },
+        updateSearchName(name){
+            this.searchName = name;
+        },
 
         clearAll(){
-            debugger
             this.username=null;
             this.token=null;
             this.charId=null;
             this.uCash=null;
-            collapsed = true;
+            this.collapsed = true;
+
+            this.searchName = null
         }
     }
 });
