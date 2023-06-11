@@ -96,7 +96,7 @@ import { ref } from 'vue';
 import { userInfoStore } from "../store/store";
 
 import HomeList from './HomeList.vue'
-import { login } from '../api/protocol'
+import { login} from '../api/protocol'
 
 //vue变量
 const userInfo = userInfoStore();

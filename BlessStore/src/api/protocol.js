@@ -35,6 +35,13 @@ export function buyItem(params){
     })
 }
 
+export function updateItem(params){
+    return request({
+        url:"/updateItemInfo",
+        method:"post",
+        data:requestParam(params)
+    })
+}
 export function Test(params) {
     return request({
         url: "/",
