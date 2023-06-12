@@ -167,7 +167,11 @@ const shopAction = (item) => {
         username: userInfo.username,
         charId: userInfo.charId,
         price: item.price,
-        num: item.num
+        info:[{
+            num: item.num,
+            itemId:item.itemId
+        }]
+        
     }
 
     buyItem(data).then(function (response) {

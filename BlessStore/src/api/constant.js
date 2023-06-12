@@ -1,6 +1,6 @@
 export const server = {
-    ip:"127.0.0.1",
-    port:"8888"
+    ip:"192.168.200.56",
+    port:"8887"
 };
 
 export function getBaseUrl() {
