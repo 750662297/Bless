@@ -5,7 +5,7 @@
             <a-layout-header style="background-color: #545c64;">
 
                 <div class="logo" style="float:left" />
-
+                <span style="font-size:20px,color:red">暂时不要买礼包!!!</span>
                 <div class="userInfoArea" style="float: right;">
                     <div v-if="userInfo.token ? true : false" style="margin-right: -50px;">
                         <span style="color:darkorange;">{{ userInfo.username }}</span>

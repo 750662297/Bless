@@ -16,7 +16,9 @@ module.exports = app => {
     });
 
     router.post('/action',controller.home.postAction)
-    router.get('/', auth,controller.home.index);
+    router.get('/',controller.home.index);
     router.post('/login', controller.home.login);
     router.post('/buy/item',auth, controller.home.buyItem)
+    router.post('/queryList',auth,controller.home.queryList)
+    router.post('/updateItemInfo',auth,controller.home.updateItemInfo)
 };

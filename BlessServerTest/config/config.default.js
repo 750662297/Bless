@@ -63,8 +63,8 @@ module.exports = appInfo => {
 
   const cluster = {
     listen: {
-        port: 8888,
-        hostname: '127.0.0.1',
+        port: 8887,
+        hostname: '192.168.200.100',
       },
   }
 

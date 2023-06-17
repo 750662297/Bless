@@ -49,7 +49,7 @@
             </a-list>
 
             <a-pagination v-model:current="currentPage" v-model:page-size="pageSize" :total="totalCount"
-                :hideOnSinglePage="true" :pageSizeOptions="pageSizeOptions" :show-total="total => `共有${total}个符合条件的商品`" />
+                 :pageSizeOptions="pageSizeOptions" :show-total="total => `共有${total}个符合条件的商品`" />
         </div>
 
         <div class="skeletonArea" v-else>
@@ -166,12 +166,14 @@ const shopAction = (item) => {
     let data = {
         username: userInfo.username,
         charId: userInfo.charId,
+        info:[
+            {
+                itemId:item.itemId,
+                num: item.num
+            }
+            
+        ],
         price: item.price,
-        info:[{
-            num: item.num,
-            itemId:item.itemId
-        }]
-        
     }
 
     buyItem(data).then(function (response) {
